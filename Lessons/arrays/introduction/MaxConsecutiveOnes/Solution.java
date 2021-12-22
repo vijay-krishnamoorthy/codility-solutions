@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args){
-        // openning a scanner to get the number of inputs and input array from the user
+        // opening a scanner to get the number of inputs and input array from the user
         Scanner sc = new Scanner(System.in);
-        // getting the array size fromt the user
+        // getting the array size from the user
         int numberOfElements = sc.nextInt();
         // creating a new array of size got from the user
         int[] arr = new int[numberOfElements];
@@ -16,7 +16,7 @@ public class Solution {
             arr[i] = sc.nextInt();
         }
 
-        // the above logic is been done by the coding platform itself.
+        // the above logic has been done by the coding platform itself.
 
         // actual logic
 
@@ -25,8 +25,8 @@ public class Solution {
         // counter to keep track of the current sequence
         int count = 0;
         // iterating through the array
-        for(int i = 0; i < arr.length; i++ ){
-            if(arr[i]!=1)  // if the current element is not one then we are resetting the counter to 0
+        for(int i : arr ){
+            if(i!=1)  // if the current element is not one then we are resetting the counter to 0
                 count = 0;
             else {
                 // if the current element is one we are increasing the count by 1
